@@ -16,12 +16,15 @@ header {
     padding: 20px;
     text-align: center;
     font-size: 2rem;
-    color: #e60012;
+    color: #ffffff;
     text-shadow: 2px 2px #fff;
 }
 
 .hero {
-    background: url('https://i.imgur.com/hD0N5G2.jpg') no-repeat center center/cover;
+    background: url('pictures/grand-theft-auto-6-character-hd-wallpaper-uhdpaper.com-269@1@n.jpg');
+    position: absolute;
+    background-position: center;
+    background-size: cover;
     height: 80vh;
     position: relative;
 }
@@ -39,6 +42,8 @@ header {
 .trailer {
     padding: 40px 20px;
     text-align: center;
+    display: flex;
+    flex-direction:row;
 }
 
 .video-container {
