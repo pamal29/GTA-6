@@ -39,19 +39,27 @@ header {
     text-align: center;
 }
 
+.traH2{
+    margin-top: 50px;
+}
+
 .trailer {
     padding: 40px 20px;
     text-align: center;
     display: flex;
-    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
 }
 
 .video-container {
     position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
+    width: 720px;
+    max-width: 100%;
+    height: 450px;
     margin-top: 20px;
 }
+
 
 .video-container iframe {
     position: absolute;
