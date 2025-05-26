@@ -5,13 +5,13 @@
 }
 
 body {
-    font-family: 'Orbitron', sans-serif;
     background-color: #111;
     color: #fff;
     line-height: 1.6;
 }
 
 header {
+    font-family: 'Orbitron', serif;
     background: #000;
     padding: 20px;
     text-align: center;
@@ -21,15 +21,14 @@ header {
 }
 
 .hero {
-    background: url('pictures/grand-theft-auto-6-character-hd-wallpaper-uhdpaper.com-269@1@n.jpg');
-    position: absolute;
-    background-position: center;
+    background: url('pictures/grand-theft-auto-6-character-hd-wallpaper-uhdpaper.com-269@1@n.jpg') center;
     background-size: cover;
     height: 80vh;
     position: relative;
 }
 
 .hero .overlay {
+    font-family: 'Orbitron', serif;
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     position: absolute;
@@ -40,6 +39,7 @@ header {
 }
 
 .traH2{
+    font-family: 'Orbitron', serif;
     margin-top: 50px;
 }
 
@@ -71,16 +71,125 @@ header {
     border-radius: 10px;
 }
 
-.info {
-    padding: 40px 20px;
-    background-color: #222;
-    text-align: center;
-}
-
 footer {
     background-color: #000;
     padding: 20px;
     text-align: center;
     font-size: 0.9rem;
     color: #888;
+}
+.jason {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.jason .row {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.jason h2{
+    font-size: 4rem;
+    font-weight: bolder;
+    color: #e323e3;
+}
+
+.jason .text {
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 150px;
+    max-width: 500px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.jason .first-pic {
+    margin-top: 150px;
+    margin-right: 5px;
+    width: 700px;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.jason .second-pic {
+    width: 100%;
+    max-width: 800px;
+    align-self: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    margin: 0 auto;
+}
+.jason .quote {
+    background: url("pictures/GTA-6-Lucia-and-Jason-2.webp") no-repeat center center;
+    background-size: cover; /* or 'cover' depending on your goal */
+
+    height: 80vh;
+    width: 80vw;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+    padding-bottom: 40px;
+    text-align: center;
+}
+.jason .quote::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3); /* darken image slightly */
+    z-index: 0;
+}
+
+.jason .quote > * {
+    z-index: 1; /* make sure text is above the overlay */
+}
+
+.luciaQuote{
+    background: url("pictures/GTA-6-VI.webp") no-repeat center center;
+    background-size: cover; /* or 'cover' depending on your goal */
+
+    height: 80vh;
+    width: 80vw;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+    padding-bottom: 40px;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .jason .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .jason .first-pic {
+        width: 100%;
+    }
+
+    .jason .text {
+        max-width: 100%;
+        text-align: center;
+    }
 }
