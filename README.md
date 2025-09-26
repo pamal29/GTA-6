@@ -7,7 +7,7 @@ You can find files like `index.html`, `main.css`, `time.js`, and assets (images)
 
 ## 🚀 Demo / Live Version
 
-[Add a link here if you’ve deployed it, e.g.: GitHub Pages, Netlify, Vercel, etc.]
+https://pamal29.github.io/GTA-6/
 
 ---
 
